@@ -32,7 +32,7 @@ check your google chrome version. Then download your chrome version.
 ## Configuration
 
 ```
-driver = Chrome(executable_path='Your Google Chrome Driver PATH')
+driver = Chrome(executable_path='Your Google Chrome Driver .exe PATH')
 ```
 use notepad++ or any ide for python and configure your google chrome driver folder location. (don't forget this step)
 
