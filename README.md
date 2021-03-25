@@ -34,7 +34,7 @@ check your google chrome version. Then download your chrome version.
 ```
 driver = Chrome(executable_path='Your Google Chrome Driver .exe PATH')
 ```
-use notepad++ or any ide for python and configure your google chrome driver folder location. (don't forget this step)
+use notepad++ or any IDE for python and configure your google chrome driver folder location. (don't forget this step)
 
 ```
 #driver.set_window_position(-10000,0)
