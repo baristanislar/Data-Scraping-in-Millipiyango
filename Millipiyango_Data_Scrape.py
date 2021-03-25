@@ -16,11 +16,11 @@ from selenium.webdriver.support.ui import Select
 #chromedriver.exe nin yerini belirliyoruz.
 driver = Chrome(executable_path='D:\Driver\chromedriver.exe')
 
-#girilecek siteyi buraya yazınız.
-driver.get("https://www.millipiyangoonline.com/cekilis-sonuclari#sayisaloto")
-
 #chrome u başlangıcta göstermez
 #driver.set_window_position(-10000,0)
+
+#girilecek siteyi buraya yazınız.
+driver.get("https://www.millipiyangoonline.com/cekilis-sonuclari#sayisaloto")
 
 #ayların seçimini sağlar (ocak=1)
 aylar = Select(driver.find_element_by_id("draw-month"))
