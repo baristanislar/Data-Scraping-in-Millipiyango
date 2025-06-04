@@ -32,9 +32,13 @@ check your google chrome version. Then download your chrome version.
 ## Configuration
 
 ```
-driver = Chrome(executable_path='Your Google Chrome Driver .exe PATH')
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+
+service = Service('Your Google Chrome Driver .exe PATH')
+driver = webdriver.Chrome(service=service)
 ```
-use notepad++ or any IDE for python and configure your google chrome driver folder location. (don't forget this step)
+Use any IDE or text editor and update the driver path with your ChromeDriver location.
 
 ```
 #driver.set_window_position(-10000,0)
@@ -42,13 +46,15 @@ use notepad++ or any IDE for python and configure your google chrome driver fold
 While code running if you don't want see google chrome page you must delete hashtag. (Default is page in visible )
 
 ```
-aylar = Select(driver.find_element_by_id("draw-month"))
+from selenium.webdriver.common.by import By
+
+aylar = Select(driver.find_element(By.ID, "draw-month"))
 aylar.select_by_value("3")
 ```
 which select the month for searching in here. ("1"=January,"2" = February ...)
 
 ```
-yillar = Select(driver.find_element_by_id("draw-year"))
+yillar = Select(driver.find_element(By.ID, "draw-year"))
 yillar.select_by_value("2021")
 ```
 which select the year for searching in here.
